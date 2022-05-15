@@ -26,7 +26,7 @@ const filterItem = (range, range2) => {
 			course.prices[0] <= range2 &&
 			course.prices[1] <= range2
 	)
-	return ul.innerHTML = (filteredCourse.map((item) => `<li>${item.name} ${item.prices}</li>`) )
+	return ul.innerHTML = (filteredCourse.map((item) => `<li>${item.name} ${item.prices}</li>`))
 }
 filterItem()
 
