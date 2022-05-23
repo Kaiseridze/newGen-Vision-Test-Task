@@ -12,6 +12,9 @@ courses.forEach(course => {
 	if (course.prices[1] === null) {
 		course.prices[1] = 0
 	}
+	if (course.prices[0] > course.prices[1]) {
+		[course.prices[0], course.prices[1]] = [course.prices[1], course.prices[0]] 
+	}
 })
 
 
